@@ -55,9 +55,7 @@ let searchWord;
 
 let counter = 0;
 
-if (myArgs[2] === undefined){
- 
-} else {
+if (myArgs[2] !== undefined){
   searchWord = myArgs[2];
   const regexSearch = new RegExp(searchWord.toLowerCase());
   for (let i = 0; i < wordArray.length; i++) {
@@ -66,7 +64,7 @@ if (myArgs[2] === undefined){
     counter = counter + 1
   }
 }
-}
+} 
 
 
 
