@@ -8,4 +8,4 @@ Numero parole (totali): 3
 
 Parola cercata: il
 
-Numero occorrenze (parola cercata): 1
+Numero occorrenze (parola cercata): 0
