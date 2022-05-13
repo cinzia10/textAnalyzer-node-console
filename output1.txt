@@ -1,0 +1,11 @@
+viva il css!
+
+Numero caratteri (spazi compresi): 12
+
+Numero caratteri (spazi esclusi): 10
+
+Numero parole (totali): 3
+
+Parola cercata: il
+
+Numero occorrenze (parola cercata): 1

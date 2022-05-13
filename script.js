@@ -10,7 +10,6 @@ const myArgs = process.argv.slice(2);
 
 /////// STEP 3 - PRENDERE IL PRIMO ELEMENTO COME "INPUTURL", IL SECONDO COME "OUTPUTURL" (NON OBBLIGATORIO) E IL TERZO
 
-
 if (myArgs[0] === undefined) {
   console.error('mi serve il file di input')
   process.exit();
@@ -26,10 +25,6 @@ if (myArgs[1] === undefined){
   outputUrl = myArgs[1];
 }
 
-
-
-
-
 let data;
 
 try {
@@ -38,7 +33,6 @@ try {
   console.log('file non trovato');
   process.exit();
 }
-
 
 
 /////// STEP 4 - LEGGERE IL CONTENUTO DEL FILE E LOGGARE IL NUMERO DI CARATTERI (SPAZI COMPRESI) E IL NUMERO DI CARATTERI (SPAZI ESCLUSI)
@@ -64,20 +58,21 @@ if (myArgs[2] !== undefined){
     counter = counter + 1
   }
 }
+} else {
+  searchWord = 'nessuna parola cercata'
 } 
-
-
 
 
 /////// STEP 5 - SE L'UTENTE HA INSERITO L'"OUTPUTURL", SCRIVERE UN NUOVO FILE CON IL TESTO DELL'ORIGINALE PIU' I DATI DELL'ANALISI
 ///////          SE L'UTENTE NON HA INSERITO L'"OUTPUTURL", SOVRASCRIVERE IL FILE ORIGINALE.
 /////// ESEMPIO: (ORIGINALE)"VIVA IL CSS!" (COPIA)"VIVA IL CSS!" \ NUMERO DI CARATTERI (SPAZI INCLUSI): 12 \ NUMERO DI CARATTERI (SPAZI ESCLUSI): 10
 
-const result = data + '\r\n' + '\r\n' + 
-               'Numero caratteri (spazi compresi): ' + countCharWithSpace + '\r\n' + '\r\n' + 
-               'Numero caratteri (spazi esclusi): ' + + countCharWithoutSpace + '\r\n' + '\r\n' +
-               'Numero parole: ' + countWord + '\r\n' + '\r\n' +
-               'Numero occorrenze parola cercata: ' + counter;
+const result = data + '\r\n' + 
+               '\r\n' + 'Numero caratteri (spazi compresi): ' + countCharWithSpace + '\r\n' + 
+               '\r\n' + 'Numero caratteri (spazi esclusi): ' + + countCharWithoutSpace + '\r\n' +
+               '\r\n' + 'Numero parole (totali): ' + countWord + '\r\n' + 
+               '\r\n' + 'Parola cercata: ' + searchWord + '\r\n' +
+               '\r\n' + 'Numero occorrenze (parola cercata): ' + counter;
 
 
 try {
