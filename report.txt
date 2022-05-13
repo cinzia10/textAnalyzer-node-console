@@ -4,12 +4,7 @@ Aliquam diam leo, mattis vitae blandit ac, tempor eu ex. Maecenas lobortis lacus
 In hac habitasse platea dictumst. In hac habitasse platea dictumst. Curabitur commodo eget massa eget sodales. Vestibulum lobortis finibus risus sit amet fringilla. Nam aliquam sapien in sem fermentum, vitae laoreet erat lobortis. Aenean accumsan luctus lacus eu placerat. Nam eleifend euismod arcu, sed lacinia felis semper eu. Fusce nec pretium elit, vitae iaculis dui. Aliquam ex felis, bibendum id congue eget, vehicula sed erat. Ut fermentum dolor ac libero venenatis euismod. In ante quam, malesuada at arcu nec, interdum viverra neque. Fusce quis libero est.
 Aenean velit augue, efficitur vitae ornare vel, ultrices in tortor. Maecenas ut condimentum leo, et varius risus. Sed dapibus ut ante in consequat. Phasellus vitae mauris nunc. Donec sed aliquam enim. Mauris suscipit fermentum dui, quis maximus justo tempus vel. Vestibulum sit amet orci eu massa convallis scelerisque. Nulla dignissim metus vel massa efficitur, in convallis lorem iaculis. Donec lacinia cursus scelerisque. Integer et ornare arcu, quis bibendum massa. Duis velit justo, consequat a convallis ac, rutrum ac justo. Etiam posuere, elit in eleifend pellentesque, sapien tellus cursus augue, vitae malesuada orci odio ac arcu. Pellentesque feugiat metus quam, sit amet dapibus velit scelerisque ac. Cras pellentesque ex id nulla hendrerit, nec maximus felis varius. Sed id erat varius, ullamcorper sapien id, tincidunt massa.
 
-Numero caratteri (spazi compresi): 3851
-
-Numero caratteri (spazi esclusi): 3282
-
-Numero parole (totali): 562
-
-Parola cercata: ut
-
-Numero occorrenze (parola cercata): 15
+numero di caratteri: 3851
+numero di caratteri spazi esclusi: 3290
+numero di parole: 562
+la parola "lore" appare 0 volte
