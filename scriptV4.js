@@ -56,8 +56,10 @@
     }
 
 
-    
-  const allOccurrencies = new Map()
+//////////////////////////////////////////////////////////////////////////////////
+
+///////// TUTTE LE OCCORRENZE
+const allOccurrencies = new Map()
 
   let count = 1;
   
@@ -70,13 +72,43 @@
     }
   }
 
+  
 
+
+  ///////////////ORDINE DECRESCENTE
+  const orderedOccurrencies =  [...allOccurrencies].sort((a, b) => b[1] - a[1]);
+  
+  
+  
+  //////////////CALCOLO PERCENTUALE
+  const occurrenciesTotalNumber = [...allOccurrencies].concat.apply([], [...allOccurrencies])
+                                                 .filter(value => typeof value === 'number')
+                                                 .reduce( (p, c) => p + c);
+
+  const totalPercentage = new Map ();
+  
+  const number = allOccurrencies.values();
+  const key = allOccurrencies.keys()
+  
+  for (let i = 0; i < orderedOccurrencies.length; i++) {
+    const element = orderedOccurrencies[i];
+    const value = (number.next().value * 100) / occurrenciesTotalNumber;
+    total.set(key.next().value, value+'%');
+    
+  }
+
+
+  console.log(totalPercentage);
+
+
+//////////////////////////////////////////////////////////////////////////////////
   const newFile = fileData + '\r\n' + 
                 '\r\n' + 'Numero caratteri (spazi compresi): ' + countCharWithSpace + '\r\n' + 
                 '\r\n' + 'Numero caratteri (spazi esclusi): ' + countCharWithoutSpace + '\r\n' +
                 '\r\n' + 'Numero parole (totali): ' + countWord + '\r\n' + 
                 '\r\n' + 'Parola cercata: ' + searchWord + '\r\n' +
                 '\r\n' + 'Numero occorrenze (parola cercata): ' + counter;
+
 
 
   try {
