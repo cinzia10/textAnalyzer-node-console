@@ -61,18 +61,18 @@
 ///////// TUTTE LE OCCORRENZE
 const allOccurrencies = new Map()
 
-  let count = 1;
+  const count = 1;
   
   for (let i = 0; i < wordArray.length; i++) {
     const word = wordArray[i];
     if (allOccurrencies.has(word)){
-      allOccurrencies.set(word, count++)
+      allOccurrencies.set(word, count);
     } else {
       allOccurrencies.set(word, count)
     }
   }
 
-  
+  console.log(allOccurrencies)
 
 
   ///////////////ORDINE DECRESCENTE
@@ -93,7 +93,7 @@ const allOccurrencies = new Map()
   for (let i = 0; i < orderedOccurrencies.length; i++) {
     const element = orderedOccurrencies[i];
     const value = (number.next().value * 100) / occurrenciesTotalNumber;
-    total.set(key.next().value, value+'%');
+    totalPercentage.set(key.next().value, value+'%');
     
   }
 
