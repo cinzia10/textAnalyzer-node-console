@@ -107,7 +107,8 @@ const allOccurrencies = new Map()
                 '\r\n' + 'Numero caratteri (spazi esclusi): ' + countCharWithoutSpace + '\r\n' +
                 '\r\n' + 'Numero parole (totali): ' + countWord + '\r\n' + 
                 '\r\n' + 'Parola cercata: ' + searchWord + '\r\n' +
-                '\r\n' + 'Numero occorrenze (parola cercata): ' + counter;
+                '\r\n' + 'Numero occorrenze (parola cercata): ' + counter + '\r\n' + 
+                '\r\n' + 'Tutte le occorrenze: ' + allOccurrencies;
 
 
 

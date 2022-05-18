@@ -1,0 +1,10 @@
+viva il css!
+
+numero di caratteri: 12
+numero di caratteri spazi esclusi: 10
+numero di parole: 3
+
+frequenza di parole
+viva: 1
+il: 1
+css: 1
